@@ -14,5 +14,16 @@ module.exports = {
         let id = parseInt(req.params.id)
         Skill.delete(id)
         res.redirect("/skills")
+    },
+    new: (req,res) => {
+        res.render("skills/new", {
+            title: "Add Skill",
+            skill: {}
+        })
+    },
+    create: (req,res) => {
+        console.log(req.body)
+        Skill.create(req.body)
+        res.redirect("/skills")
     }
 };

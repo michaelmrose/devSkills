@@ -1,0 +1,16 @@
+<%- include("../partials/header")%> <%- include("../partials/navigation")%>
+<h1><%=title%></h1>
+<form action="/skills" method=POST >
+        <p>
+                <label>Skill:</label>
+                <input name="skill"></inpute>
+        </p>
+        <p>
+                <label>Experience:</label>
+                <input name="level"></inpute>
+        </p>
+        <p>
+        <button type="submit">Save</button>
+        </p>
+</form>
+<%- include("../partials/footer")%>
