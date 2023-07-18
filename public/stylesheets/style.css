@@ -10,5 +10,18 @@ body {
 
 a {
     font-size: 20px;
-    color: #400741;
+    color: #1d49cd;
+}
+button {
+    font-size: 15px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 14px;
+    padding: 10px
+}
+input {
+    display: block
+}
+.nav {
+    font-size: 30px;
 }
