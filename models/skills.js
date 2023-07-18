@@ -11,4 +11,8 @@ const skills = [
 module.exports = {
     all: () => skills,
     one: (id) => skills.find((e) => e.id === id),
+    delete: (id) => {
+        let idx = skills.findIndex(e=>e.id === id)
+        skills.splice(idx,1)
+    }
 };

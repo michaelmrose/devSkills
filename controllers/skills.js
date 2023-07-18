@@ -10,4 +10,9 @@ module.exports = {
             skill: Skill.one(id),
         });
     },
+    delete: (req,res) => {
+        let id = parseInt(req.params.id)
+        Skill.delete(id)
+        res.redirect("/skills")
+    }
 };
